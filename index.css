@@ -1,0 +1,42 @@
+header {
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #ff8652e3;
+}
+
+.inicio {
+  background-size: cover;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.1)),
+    url("./assets/Tilcara.jpg");
+}
+
+.contenido-inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.parrafo-inicio {
+  text-align: right;
+  width: 50vw;
+}
+
+.nav-item:hover {
+  background-color: #e9d2c0;
+  border-radius: 10px;
+}
+
+.btn {
+  background-color: #e9d2c0;
+  border: none;
+  color: black;
+}
+
+.btn:hover {
+  background-color: #ff8652e3;
+  color: black;
+}
