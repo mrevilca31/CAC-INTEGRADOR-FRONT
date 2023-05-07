@@ -40,3 +40,59 @@ header {
   background-color: #ff8652e3;
   color: black;
 }
+
+.lugares {
+  height: 80vh;
+  background-color: #e9d2c0;
+}
+
+.tag-lugares {
+  background-color: #dda15e;
+  border-radius: 5px;
+  padding: 2px 4px;
+  font-size: small;
+  font-weight: bold;
+}
+
+.card {
+  height: 22rem;
+  margin: 10px 20px;
+  padding-top: 10px;
+}
+
+.info-tilcara {
+  height: 70vh;
+  background-color: #ebf0dc;
+}
+
+.imagen-info {
+  height: 100%;
+}
+
+.contacto {
+  height: 65vh;
+  background-color: #e9d2c0;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contacto {
+  width: 60%;
+}
+
+.btn-form {
+  background-color: #ebf0dc;
+  width: 100%;
+  margin-top: 20px;
+}
