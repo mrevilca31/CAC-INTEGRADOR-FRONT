@@ -22,7 +22,7 @@
       <!-- Navbar -->
       <nav class="navbar navbar-expand-sm fixed-top vh-20 px-5">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mi Pagina</a>
+          <a class="navbar-brand" href="#">Mi Tilcarita</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -52,14 +52,17 @@
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item mx-lg-4 mx-md-3">
                   <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
+                    >Inicio</a
                   >
                 </li>
                 <li class="nav-item mx-lg-4 mx-md-3">
-                  <a class="nav-link active" href="#">Link</a>
+                  <a class="nav-link active" href="#lugares">Lugares</a>
                 </li>
                 <li class="nav-item mx-lg-4 mx-md-3">
-                  <a class="nav-link active" href="#">Link</a>
+                  <a class="nav-link active" href="#info-tilcara">Tilcara</a>
+                </li>
+                <li class="nav-item mx-lg-4 mx-md-3">
+                  <a class="nav-link active" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -70,6 +73,7 @@
       <!-- Inicio -->
       <section
         class="container-fluid inicio d-flex flex-column justify-content-center align-items-end px-5"
+        id="inicio"
       >
         <div class="contenido-inicio text-white">
           <h1 class="titulo-inicio">Inicio</h1>
@@ -85,7 +89,124 @@
         <button type="button" class="btn btn-success">Success</button>
       </section>
     </header>
-    <main></main>
+
+    <!-- Contenido Principal -->
+    <main class="">
+      <!-- Lugares a conocer -->
+      <section
+        class="lugares d-flex flex-column justify-content-center align-items-center py-2"
+        id="lugares"
+      >
+        <span class="lugares-subtitulo">Algunos de los</span>
+        <h2 class="titulo-lugares">Lugares para conocer</h2>
+        <div class="row cards-lugares">
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/pucara-tilcara.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <span class="tag-lugares">Historia</span>
+              <span class="tag-lugares">Cultura</span>
+              <h5 class="card-title mt-1">El Pucara</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/pucara-tilcara.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <span class="tag-lugares">Historia</span>
+              <span class="tag-lugares">Cultura</span>
+              <h5 class="card-title mt-1">El Pucara</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="./assets/pucara-tilcara.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <span class="tag-lugares">Historia</span>
+              <span class="tag-lugares">Cultura</span>
+              <h5 class="card-title mt-1">El Pucara</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre Tilcara -->
+      <section class="info-tilcara row" id="info-tilcara">
+        <img class="imagen-info col" src="./assets/TilcaraCartel.jpg" alt="" />
+        <div class="descripcion-info col pt-5 px-5">
+          <h3>Un poco de Historia de Tilcara</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem animi qui officia laboriosam. Consequuntur ipsa,
+            dolorum tempora quasi beatae commodi, nobis illo error voluptates,
+            ullam perferendis provident consequatur repudiandae fuga? Officiis
+            eius blanditiis nam libero maiores tenetur voluptas ipsam! Nisi
+            nihil aspernatur mollitia! Placeat minima sapiente.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="contacto row" id="contacto">
+        <div class="info-contacto col">
+          <span class="lugares-subtitulo">Si querés mas información</span>
+          <h3 class="titulo-lugares">Completá el siguiente formulario</h3>
+          <span class="lugares-subtitulo"
+            >y nos ponemos en contacto con vos.</span
+          >
+        </div>
+        <div class="col-contacto col">
+          <form class="form-contacto">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Correo Electrónico</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Nombre</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-form">
+              Enviar
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <!-- Boostrap -->
     <script
