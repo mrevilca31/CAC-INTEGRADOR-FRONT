@@ -25,7 +25,7 @@ header {
   width: 50vw;
 }
 
-.nav-item:hover {
+.nav-item-header:hover {
   background-color: #e9d2c0;
   border-radius: 10px;
 }
@@ -95,4 +95,19 @@ header {
   background-color: #ebf0dc;
   width: 100%;
   margin-top: 20px;
+}
+
+.footer {
+  background-color: #ff8652e3;
+  height: 18vh;
+}
+
+.nav-item-footer {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link-footer {
+  margin-left: 5px;
+  color: black;
 }
