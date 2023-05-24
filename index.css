@@ -85,16 +85,59 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
 }
 
 .form-contacto {
-  width: 60%;
+  width: 100%;
 }
 
 .btn-form {
   background-color: #ebf0dc;
   width: 100%;
   margin-top: 20px;
+}
+
+.tickets {
+  background-color: #ebf0dc;
+}
+
+.ticket-precio-valor {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.card-ticket {
+  height: 10rem;
+  width: 14rem;
+}
+
+.card-ticket-categoria {
+  font-size: 1.3rem;
+}
+
+.card-ticket-porcentaje {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.compra-ticket-form {
+  width: 40%;
+}
+
+.tickets-total {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.btn-comprar-ticket {
+  background-color: #ff8652e3;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.btn-comprar-ticket:hover {
+  background-color: #e9d2c0;
 }
 
 .footer {
