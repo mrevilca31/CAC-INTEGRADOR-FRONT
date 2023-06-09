@@ -68,6 +68,11 @@
                 <li class="nav-item-header mx-lg-4 mx-md-3">
                   <a class="nav-link active" href="#contacto">Contacto</a>
                 </li>
+                <li class="nav-item-header mx-lg-4 mx-md-3">
+                  <a class="nav-link active" href="#venta-tickets"
+                    >Comprá Tus Tickets</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -188,34 +193,30 @@
         <div class="col-contacto">
           <form class="form-contacto">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
+              <label for="email-contacto" class="form-label"
                 >Correo Electrónico</label
               >
               <input
                 type="email"
                 class="form-control"
-                id="exampleInputEmail1"
+                id="email-contacto"
                 aria-describedby="emailHelp"
               />
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Nombre</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="exampleInputPassword1"
-              />
+              <label for="nombre-contacto" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre-contacto" />
             </div>
 
-            <button type="submit" class="btn btn-form">Enviar</button>
+            <button type="submit" class="btn btn-form" id="btn-enviar-contacto">
+              Enviar
+            </button>
           </form>
         </div>
       </section>
 
       <!-- Venta de tickets-->
-      <section class="tickets pt-5 pb-3">
+      <section class="tickets pt-5 pb-3" id="venta-tickets">
         <div class="ticket-precio d-flex flex-column align-items-center">
           <h2 class="ticket-precio-titulo">Valor del Ticket</h2>
           <h2 class="ticket-precio-valor">$300</h2>
@@ -254,35 +255,29 @@
           <div class="compra-ticket-form">
             <form class="form-contacto">
               <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Nombre</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
+                <label for="input-nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="input-nombre" />
               </div>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
+                <label for="input-email" class="form-label"
                   >Correo Electrónico</label
                 >
                 <input
                   type="email"
                   class="form-control"
-                  id="exampleInputEmail1"
+                  id="input-email"
                   aria-describedby="emailHelp"
                 />
               </div>
               <div class="d-flex">
                 <div class="mb-3 w-50 pe-3">
-                  <label for="exampleInputPassword1" class="form-label"
+                  <label for="cantidadTickets" class="form-label"
                     >Cantidad</label
                   >
                   <input
                     type="number"
                     class="form-control"
-                    id="exampleInputPassword1"
+                    id="cantidadTickets"
                   />
                 </div>
                 <div class="mb-3 w-50 ps-3">
@@ -294,7 +289,7 @@
                     class="form-select"
                     aria-label="Default select example"
                   >
-                    <option selected>Sin descuento</option>
+                    <option selected value="0">Sin descuento</option>
                     <option value="1">Niños</option>
                     <option value="2">Estudiantes</option>
                     <option value="3">Jubilados</option>
@@ -302,9 +297,18 @@
                 </div>
               </div>
               <div class="mt-4 mb-4 d-flex justify-content-center">
-                <span class="tickets-total">Total a Pagar: $</span>
+                <span class="tickets-total"
+                  >Total a Pagar: $<span
+                    class="tickets-total"
+                    id="precioTotal"
+                  ></span
+                ></span>
               </div>
-              <button type="submit" class="btn btn-comprar-ticket">
+              <button
+                type="submit"
+                class="btn btn-comprar-ticket"
+                id="btn-comprar"
+              >
                 Comprar
               </button>
             </form>
@@ -341,5 +345,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
